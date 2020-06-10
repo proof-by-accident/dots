@@ -1,0 +1,155 @@
+! ------------------------------------------------------------------------------
+!  Colors
+! ------------------------------------------------------------------------------
+
+! set base colors
+#define normalblack #303030
+#define normalred #e9097c
+#define normalyellow #b6e77u
+#define normalgreen #ecebbe
+#define normalblue #a9cdeb
+#define normalmagenta #FF69B45
+#define normalcyan #c9caec
+#define normalwhite #f2f2f2
+
+#define brightblack #4a4a4a
+#define brightred #f99286
+#define brightyellow #c3f786
+#define brightgreen #fcfbcc
+#define brightblue #b6defb
+#define brightmagenta #fba1fb
+#define brightcyan #d7d9fc
+#define brightwhite #e2e2e2
+
+! set theme colors
+#define themedarkgreen #08504E
+#define themewhite #dfdfdf
+#define themegray #dcf2f1
+#define themepink #F8949E
+#define themeyellow #f0e1b9
+#define themecyan #AED8D6
+#define themeorange #F79868
+#define themegreen #80b28d
+#define themeblue #6698AA
+#define themelightgreen #A1CFB4
+
+*colorthemeblack:	normalblack
+*colorthemegreen:	themegreen
+*colorthemelightgreen:	themelightgreen
+*colorthemedarkgreen:	themedarkgreen
+*colorthemewhite:	themewhite
+*colorthemegray:	themegray
+*colorthemepink:	themepink
+*colorthemeyellow:	themeyellow
+*colorthemeorange:	themeorange
+*colorthemecyan:	themecyan
+*colorthemeblue:	themeblue
+
+! ------------------------------------------------------------------------------
+!  URxvt
+! ------------------------------------------------------------------------------
+
+URxvt*foreground:	normalwhite
+URxvt*background:   	normalblack
+URxvt*cursorColor:	normalwhite
+
+! normal colors
+! 0 black, 1 red, 2 yellow, 3 green, 4 blue, 5 magenta, 6 cyan, 7 white
+*color0:    normalblack
+*color1:    themeorange
+*color2:    themeyellow
+*color3:    themelightgreen
+*color4:    themegreen
+
+*color5:    themepink
+*color6:    themecyan
+*color7:    themewhite
+
+! bright colors
+*color8:    brightblack
+*color9:    brightred
+*color10:    brightyellow
+*color11:    brightgreen
+*color12:    brightblue
+*color13:    brightmagenta
+*color14:    brightcyan
+*color15:    brightwhite
+
+! schemer colors
+!*color0: #afd0d9
+!*color1: #80b28d
+!*color2: #a1cfb4
+!*color3: #509b7a
+!*color4: #14605b
+!*color5: #267c55
+!*color6: #669895
+!*color7: #85c9a4
+!*color8: #e3d098
+!*color9: #cbb87f
+!*color10: #abaf76
+!*color11: #afd491
+!*color12: #69a55f
+!*color13: #8dbf72
+!*color14: #c0e1ae
+!*color15: #1f613
+!
+URxvt.cursorBlink : 0
+URxvt*font        : xft:DejaVu Sans Mono for Powerline:size=16
+
+
+
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+URxvt.lineSpace           : -1
+URxvt.letterSpace         : -2
+URxvt.scrollBar           : false
+URxvt.internalBorder      : 44
+URxvt.cursorUnderline     : false
+URxvt.geometry            : 70x35
+URxvt.thickness           : 5
+URxvt.titleBar            : false
+URxvt.intensityStyles     : false
+URxvt*transparent	  : true
+URxvt*shading		  : 40
+
+URxvt.keysym.Control-Up:     \033[1;5A
+URxvt.keysym.Control-Down:   \033[1;5B
+URxvt.keysym.Control-Left:   \033[1;5D
+URxvt.keysym.Control-Right:  \033[1;5C
+
+URxvt.perl-ext-common : default,matcher
+URxvt.url-launcher    : firefox
+URxvt.matcher.button : 1
+
+! ------------------------------------------------------------------------------
+! emacs
+! ------------------------------------------------------------------------------
+emacs*Foreground:	normalwhite
+emacs*Background:	normalblack
+emacs*cursorColor:	themedarkgreen
+
+! ------------------------------------------------------------------------------
+! rofi
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+
+! state:	    'bg', 'fg', 'bgalt', 'hlbg', 'hlfg'
+rofi.color-normal:  themedarkgreen, themewhite, themedarkgreen, themepink, themewhite
+rofi.color-window:  themedarkgreen
+rofi.fake-transparency : true
+rofi.font              : SF Mono 18
+rofi.separator-style   : none
+rofi.hide-scrollbar    : true
+rofi.location          : 1
+rofi.yoffset           : 48
+rofi.xoffset           : 48
+rofi.fullscreen        : false
+
+! font improvement
+Xft.antialias: true
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintslight
+Xft.hinting: true
+Xft.autohint: false
+Xft.rgba: rgb
+Xft.dpi: 96
