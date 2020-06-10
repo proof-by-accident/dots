@@ -1,0 +1,4 @@
+#!/bin/bash
+
+ACTIVE_DIR=$(xcwd)
+urxvt -cd $ACTIVE_DIR

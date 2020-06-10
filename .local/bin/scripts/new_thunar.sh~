@@ -1,0 +1,5 @@
+#!/bin/bash
+
+thunar "`$HOME/.local/bin/xcwd`"
+echo "`$HOME/.local/bin/xcwd`" > ~/foo
+
